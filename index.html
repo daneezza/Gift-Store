@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Valentine Flowers - Order Your Flowers Online</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Valentine Flowers</h1>
+
+        <div class="product" id="product_01">
+            <img src="white.jpeg" alt="white-bouquet">
+            <div class="description"><h2>White Bouquet</h2>
+                <div class="price">£24</div>
+            </div>    
+        </div>
+
+        <div class="product" id="product_02">
+            <img src="pink.jpeg" alt="pink-bouquet">
+            <div class="description"><h2>Pink Bouquet</h2>
+                <div class="price">£25</div>
+            </div>
+        </div>
+
+        <div class="product" id="product_03">
+            <img src="red.jpeg" alt="red-bouquet">
+            <div class="description"><h2>Red Bouquet</h2>
+                <div class="price">£20</div>
+            </div>
+        </div>
+
+        <div class="labelOrder">Your  Order:
+            <div id="orderDescription"></div>
+            <div id="order"></div>
+        </div>
+        
+        <form>
+            <label for="bouquetOptions">Choose an option:</label>
+            <select name="bouquetOptions" id="bouquetOptions">
+                <option value="extra">with 50% Extra Flowers</option>
+                <option value="withChampagne">With Champagne</option>
+            </select>
+
+            <label for="white">White</label>
+            <input type="radio" id="white" name="colour" value="White">
+            <label for="pink">Pink</label>
+            <input type="radio" id="pink" name="colour" value="Pink">
+            <label for="red">Red</label>
+            <input type="radio" id="red" name="colour" value="Red">
+
+            <input type="button" value="Place Your Order">
+            <input type="reset" value="Clear Your Order">
+        </form>
+
+    </div>
+    <script src="valentine.js"></script>
+</body>
+</html>
